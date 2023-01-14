@@ -1,4 +1,4 @@
-#Task1
+ #Task1
 letter_dict = dict()
 #import numpy as np
 
@@ -53,22 +53,21 @@ if __name__ == "__main__":
 
 #Task 3
 
-
 class Student:
-    def __init__(self, student_name=" ", student_id=0, student_age=0, student_marks=0):
-        self.student_id = student_id
-        self.student_age = student_age
-        self.student_marks = student_marks
-        self.student_name = student_name
-
-    def set_student_age(self, sage):
+    def __init__(self, sn=" ", sid=0, sage=0, sms=0):
+        self.student_id = sid
         self.student_age = sage
+        self.student_marks = sms
+        self.student_name = sn
 
     def get_student_age(self):
         return self.student_age
 
-    def student_marks(self, mark):
-        self.student_marks = mark
+    def set_student_age(self, sage):
+        self.student_age = sage
+
+    def student_marks(self, sms):
+        self.student_marks = sms
 
     def get_student_marks(self):
         return self.student_marks
@@ -77,16 +76,18 @@ class Student:
         return f"Student {self.student_name} of age {self.student_age} has student id {self.student_id} and has attained {self.student_marks} marks"
 
 
-
-
 if __name__ == '__main__':
-    s = Student
+
     name = str(input("Enter name of the student: "))
     sid = int(input("Students id: "))
     age = int(input("Student age: "))
     marks = int(input("Student marks: "))
-    print(s(name, sid, age, marks))
-    s.set_student_age(sid)
+    s = Student(name, sid, age, marks)
+    print(s)
+    s.set_student_age(20)
+    print(s.get_student_age())
+    print(s)
+
 
 
 
