@@ -15,7 +15,12 @@ def letter_counter(message: str):
     for k, v in letter_dict.items():
         count += v
 
-    return letter_dict, f"Total number of letters are {count}"
+    return f"Number of letters in {message} are {count}"
+
+
+def dict_to_tuples():
+    converted = [(k, v) for k, v in letter_dict.items()]
+    return converted
 
 
 if __name__ == "__main__":
@@ -23,6 +28,8 @@ if __name__ == "__main__":
         letter_dict = dict()
         msg = str(input("Enter a message: "))
         print(letter_counter(msg))
+        print(dict_to_tuples())
+
 
 
 #Task2
