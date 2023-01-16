@@ -25,7 +25,6 @@ def letter_counter(message: str):
 
 def dict_to_tuples():
     """ Converts a dictionary to tuple
-    :param: Takes in a dictionary
     :return: Dictionary converted into a tuple
     """
     converted = [(k, v) for k, v in letter_dict.items()]
