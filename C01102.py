@@ -40,9 +40,12 @@ if __name__ == "__main__":
         print(dict_to_tuples())
 
 
-
 #Task2
 def get_product(text: str):
+    """Takes a string and returns the product of the given text sepetarated by *
+        :param text: string that contains numbers seperated by * only
+        :return: product of the given text
+    """
     mult = 1
     res = 0
     numbers = text.split("*")
@@ -58,9 +61,7 @@ if __name__ == "__main__":
     print(get_product("4*3*2*1"))
 
 
-
 #Task 3
-
 class Student:
     def __init__(self, sn=" ", sid=0, sage=0, sms=0):
         self.student_id = sid
