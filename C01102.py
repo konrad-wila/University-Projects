@@ -4,6 +4,11 @@ letter_dict = dict()
 
 
 def letter_counter(message: str):
+    """
+    Takes a word/message and returns a tuple that contains the letter frequency
+    :param message: Enter a word or a message
+    :return: Returns a tuple containing the letter frequency
+    """
     for letters in message:
         if letters in letter_dict:
             letter_dict[letters] += 1
@@ -19,6 +24,10 @@ def letter_counter(message: str):
 
 
 def dict_to_tuples():
+    """ Converts a dictionary to tuple
+    :param: Takes in a dictionary
+    :return: Dictionary converted into a tuple
+    """
     converted = [(k, v) for k, v in letter_dict.items()]
     # converted = List(letterdict.items())
     return converted
