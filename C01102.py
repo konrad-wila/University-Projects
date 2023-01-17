@@ -20,7 +20,7 @@ def letter_counter(message: str):
     for k, v in letter_dict.items():
         count += v
 
-    return f"Number of letters in {message} are {count}"
+    return f"{message} consist of {count} letters"
 
 
 def dict_to_tuples():
