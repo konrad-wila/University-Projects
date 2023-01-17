@@ -59,7 +59,8 @@ def get_product(text: str):
 
 
 if __name__ == "__main__":
-    print(get_product("4*3*2*1"))
+    nums = str(input("Enter a string of numbers: "))
+    print(get_product(nums))
 
 
 #Task 3
