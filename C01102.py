@@ -54,7 +54,8 @@ def get_product(text: str):
         mult *= num
         # alternatively we can also use prod(from numpy)
         #res = np.prod(convert)
-    return mult, res
+    return mult
+    # return res (if numpy method is used)
 
 
 if __name__ == "__main__":
