@@ -32,6 +32,9 @@ def selectionSortDistance(values):
         return values
     except Exception as e:
         return f"Something went wrong {e}"
+    except len(values) == 0:
+        return f"The provided values are empty {values}"
+# we can also use sort() function as values.sort(key=lambda x:x[0])
 
 
 def selectionSortPrice(values):
@@ -45,6 +48,9 @@ def selectionSortPrice(values):
         return values
     except Exception as e:
         return f"Something went wrong {e}"
+    except len(values) == 0:
+        return f"The provided values are empty {values}"
+# we can also use sort() function as values.sort(key=lambda x:x[1])
 
 
 if __name__ == "__main__":
@@ -53,6 +59,7 @@ if __name__ == "__main__":
     printed(selectionSortDistance(listed("Tiny.txt")))
     print("Sorting according to Price: ")
     printed(selectionSortPrice(listed("Tiny.txt")))
+    print(listed("Tiny.txt"))
 
 
 
