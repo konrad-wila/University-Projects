@@ -22,23 +22,29 @@ def printed(value):
 
 # Task 2
 def selectionSortDistance(values):
-    for i in range(len(values)-1):
-        min_pos = i
-        for j in range(i+1, len(values)):
-            if values[j][0] < values[min_pos][0]:
-                min_pos = j
-        values[i], values[min_pos] = values[min_pos], values[i]
-    return values
+    try:
+        for i in range(len(values)-1):
+            min_pos = i
+            for j in range(i+1, len(values)):
+                if values[j][0] < values[min_pos][0]:
+                    min_pos = j
+            values[i], values[min_pos] = values[min_pos], values[i]
+        return values
+    except Exception as e:
+        return f"Something went wrong {e}"
 
 
 def selectionSortPrice(values):
-    for i in range(len(values)-1):
-        min_pos = i
-        for j in range(i+1, len(values)):
-            if values[j][1] < values[min_pos][1]:
-                min_pos = j
-        values[i], values[min_pos] = values[min_pos], values[i]
-    return values
+    try:
+        for i in range(len(values)-1):
+            min_pos = i
+            for j in range(i+1, len(values)):
+                if values[j][1] < values[min_pos][1]:
+                    min_pos = j
+            values[i], values[min_pos] = values[min_pos], values[i]
+        return values
+    except Exception as e:
+        return f"Something went wrong {e}"
 
 
 if __name__ == "__main__":
