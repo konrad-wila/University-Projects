@@ -98,7 +98,7 @@ if __name__ == "__main__":
     print("Sorting according to Price: ")
     printed(selectionSortPrice(listed("Tiny.txt")))
     print(listed("Tiny.txt"))
-    print(bubblesortprice(listed("Tiny.txt")))
+
 
 
 
